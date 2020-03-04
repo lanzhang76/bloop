@@ -31,8 +31,8 @@ Open `index.html`.
 1. Where is the GLSL fragment shader code? What is it doing?
 
 Open `index.js`
-1. What is a `THREE.Sphere`, `THREE.ShaderMaterial`, and `THREE.mesh`?
-1. How is the GLSL fragment shader code interacting with each (if at all)?
+1. What do `init()`, `createRend()`, and `animate()` do?
+1. Where is the GLSL fragment shader code being used?
 
 ### Modifying the starter code
 1. How do we extract amplitude from our audio stream?
@@ -42,9 +42,17 @@ Open `index.js`
 
 ## Schedule
 
-| Time | Duration | Purpose | Description |
-|------|----------|---------|-------------|
+|Duration | Purpose | Description |
+|---------|---------|-------------|
+| 10 min | Activate | Small group investigation of `audio_input.js` starter code |
+| 10 min | Study | Group review of `audio_input.js` starter code |
+| 10 min | Activate | Small group investigation of `index.html` and `index.js` starter code |
+| 10 min | Study | Group review of `index.html` and `index.js` starter code |
+| 10 min | Engage | Connect the components |
+| 10 min | Activate | What more could you do? |
 
 ## Prep
+* Download starter code.
 
 ## Materials
+* Nothing special.
