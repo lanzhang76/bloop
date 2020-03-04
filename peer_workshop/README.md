@@ -1,4 +1,4 @@
-# Making an audio-responsive shader with Three.js
+# Experimental Shaders Peer-to-peer lesson: making an audio-responsive shader with Three.js
 
 # Overview
 We've learned how to write fragment shaders in OpenGL Shading Language (GLSL). But wouldn't it be cool if we could control our shaders with audio input? Today, we'll learn one set of tools that helps us do this.
