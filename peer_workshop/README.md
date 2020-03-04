@@ -14,7 +14,7 @@ We've learned how to create fragment shaders using OpenGL Shading Language (GLSL
 
 1. Process microphone input using Web Audio API
 1. Use processed audio information within GLSL fragment shader code
-1. Use GLSL fragmant shader code to modify a Three.js material
+1. Use GLSL fragment shader code to modify a Three.js material
 
 ## Questions
 
