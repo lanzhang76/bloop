@@ -9,11 +9,14 @@ function init() {
     clock = new THREE.Clock();
     scene.background = new THREE.Color('pink');
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 5;
+    camera.position.z = 4;
 
 
     // create a lighting source:
-
+    var spotLight = new THREE.SpotLight(0xff0000);
+    spotLight.position.set(0, 100, 1);
+    spotLight.castShadow = true;
+    scene.add(spotLight);
 
     // create geometry
     geometry = new THREE.SphereGeometry(2, 32, 32);
@@ -26,10 +29,10 @@ function init() {
 
     material = new THREE.ShaderMaterial({
         uniforms: uniform1,
+        fog: true,
         vertexShader: document.getElementById('vs').textContent.trim(),
         fragmentShader: document.getElementById('fs').textContent.trim()
     });
-
     sphere = new THREE.Mesh(geometry, material);
     sphere.castShadow = true; //default is false
     sphere.receiveShadow = false; //default

@@ -11,18 +11,25 @@ function init() {
 
     var geometry = new THREE.SphereGeometry(0.5, 128, 128);
     const vertexShader = `
-            vUv = uv;
+            #version 300 es
+            uniform float time;
+            varying vec2 vUv;
             void main(){
                 
                 gl_Position=vec4(0.,0.,3.,1.);
                 
             }
     
-        `,
+        `
 
     const fragmentShader = ` 
-            varying vec2 vUv;
+            #version 300 es
+            precision highp float;
+            precision highp int;
+
             uniform float time;
+            out vec4 out_FragColor;
+            varying vec2 vUv;
             void main(){
 
                 gl_FragColor=vec4(1.);
